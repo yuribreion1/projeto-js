@@ -1,3 +1,6 @@
+var botaoCalculaImc = document.getElementById("calcula-imcs");
+botaoCalculaImc.addEventListener("click" , function(){
+
 var pacienteTr = document.getElementsByClassName("paciente");
 
 percorreArray(pacienteTr, function(paciente){
@@ -25,5 +28,16 @@ percorreArray(pacienteTr, function(paciente){
 		var imcTd = paciente.getElementsByClassName("info-imc")[0];
 		imcTd.textContent = imc; //imprimindo o valor de imc nas TD's
 		console.log(imc);
+	})
+});
+
+var trs = document.getElementsByTagName("tr");
+percorreArray(trs, function(trAtual){
+	trAtual.addEventListener("mouseover", function(){
+		this.setAttribute("bgcolor", "grey");
 	});
+});
+
+
+
 
