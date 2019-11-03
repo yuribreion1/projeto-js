@@ -2,25 +2,25 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Meus pacientes</title>
+		<title>BMI Calculator</title>
 		<link rel="stylesheet" type="text/css" href="reset.css">
 		<link rel="stylesheet" type="text/css" href="alura.css">
 	</head>
 	<body>
 		<header>
 			<div class="container">
-				<h1>Meus pacientes</h1>
+				<h1>Patients</h1>
 			</div>
 		</header>
 		<main class="container">
 			<section>
-				<h2>Meus pacientes</h2>
+				<h2>My patients</h2>
 				<table>
 					<tr>
-						<th>Nome</th>
-						<th>Peso(kg)</th>
-						<th>Altura(m)</th>
-						<th>IMC</th>
+						<th>Name</th>
+						<th>Weight(kg)</th>
+						<th>Height(m)</th>
+						<th>BMI</th>
 					</tr>
 					<tr class="paciente"> 
 						<td class="info-nome" id="nome-1">Leonardo</td>
@@ -41,24 +41,24 @@
 						<td class="info-imc" id="imc-3"></td>
 					</tr>
 				</table>
-				<button id="calcula-imcs" class="botao ">Calcular Imcs</button>
+				<button id="calcula-imcs" class="botao ">Check BMI's</button>
 			</section>
 			<section>
-				<h2>Adicionar novo paciente</h2>	
+				<h2>Add new patient</h2>
 				<form>
 					<fieldset>
-						<label for="nome">Nome:</label>
+						<label for="nome">Name:</label>
 						<input id="campo-nome" type="text" placeholder="digite o nome do seu paciente">
 					</fieldset>
 					<fieldset class="campo-peso">
-						<label for="peso">Peso:</label>
+						<label for="peso">Weight<strong>(kg)</strong>:</label>
 						<input id="campo-peso" type="text" placeholder="digite o peso do seu paciente">
 					</fieldset>
 					<fieldset class="campo-altura">
-						<label for="altura">Altura:</label>
+						<label for="altura">Height<strong>(m)</strong>:</label>
 						<input id="campo-altura" type="text" placeholder="digite a altura do seu paciente">
 					</fieldset>
-					<button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+					<button id="adicionar-paciente" class="botao bto-principal">Add</button>
 				</form>
 			</section>
 		</main>
